@@ -5,13 +5,19 @@ import { AppComponent } from './app.component';
 import { BuiltPipeComponent } from './built-pipe/built-pipe.component';
 import { CustPipeComponent } from './cust-pipe/cust-pipe.component';
 import { SearchPipePipe } from './search-pipe.pipe';
-import {FormsModule } from "@angular/forms"
+import {FormsModule } from "@angular/forms";
+import { CustomDirectiveDirective } from './custom-directive.directive';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
+import { BuiltDirectiveComponent } from './built-directive/built-directive.component'
 @NgModule({
   declarations: [
     AppComponent,
     BuiltPipeComponent,
     CustPipeComponent,
     SearchPipePipe,
+    CustomDirectiveDirective,
+    CustomDirectiveComponent,
+    BuiltDirectiveComponent,
   ],
   imports: [
     BrowserModule,
