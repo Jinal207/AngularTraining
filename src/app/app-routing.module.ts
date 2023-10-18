@@ -4,12 +4,14 @@ import { BuiltPipeComponent } from './built-pipe/built-pipe.component';
 import { CustPipeComponent } from './cust-pipe/cust-pipe.component';
 import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 import { BuiltDirectiveComponent } from './built-directive/built-directive.component';
+import { ArrayMethodsComponent } from './array-methods/array-methods.component';
 
 const routes: Routes = [
   { path: "builtinPipe", component: BuiltPipeComponent },
   { path: "customPipe", component: CustPipeComponent },
   { path: "customDirective", component: CustomDirectiveComponent },
-  { path: "builtDirective", component:BuiltDirectiveComponent }
+  { path: "builtDirective", component:BuiltDirectiveComponent },
+  { path: "arrayMethods", component:ArrayMethodsComponent }
 ];
 
 @NgModule({

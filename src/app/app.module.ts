@@ -8,7 +8,8 @@ import { SearchPipePipe } from './search-pipe.pipe';
 import {FormsModule } from "@angular/forms";
 import { CustomDirectiveDirective } from './custom-directive.directive';
 import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
-import { BuiltDirectiveComponent } from './built-directive/built-directive.component'
+import { BuiltDirectiveComponent } from './built-directive/built-directive.component';
+import { ArrayMethodsComponent } from './array-methods/array-methods.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { BuiltDirectiveComponent } from './built-directive/built-directive.compo
     CustomDirectiveDirective,
     CustomDirectiveComponent,
     BuiltDirectiveComponent,
+    ArrayMethodsComponent,
   ],
   imports: [
     BrowserModule,
