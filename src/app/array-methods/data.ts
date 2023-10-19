@@ -178,7 +178,12 @@ export const SomeData: Array<any> = [
   { id: 5, name: 'abc5', age: 5 },
 ]
 
-export const SortData: Array<any> = ["1", 2, 3, "2", 6, 7, 4]
+export const SortData: Array<any> = [
+{ id: 1, name: 'abc1', age: 1 },
+{ id: 2, name: 'abc2', age: 2 },
+{ id: 4, name: 'abc4', age: 4 },
+{ id: 3, name: 'abc3', age: 3 },
+{ id: 5, name: 'abc5', age: 5 },]
 
 export const SpliceData: Array<any> = [
   { id: 1, name: 'abc1', age: 1 },

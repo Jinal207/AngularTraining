@@ -160,7 +160,11 @@ export class ArrayMethodsComponent {
   }
 
   onKeys(): void {
-    this.keysResult = this.keysData.keys()
+    this.keysResult = ""
+    this.keysData.keys()
+    for (let i in this.keysData) {
+      this.keysResult += i
+    }
   }
 
   onLastIndexOf(): void {
@@ -205,7 +209,7 @@ export class ArrayMethodsComponent {
   }
 
   onSort(): void {
-    this.sortResult = this.sortData.sort()
+   this.sortResult = this.sortData.sort((a:any,b:any)=>b.id-a.id)
   }
 
   onSplice(): void {
