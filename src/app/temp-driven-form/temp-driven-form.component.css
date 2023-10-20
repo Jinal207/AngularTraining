@@ -26,15 +26,13 @@ button {
 
 label {
   font-weight: bold;
-  color:rgb(58, 112, 91)
+  color: rgb(58, 112, 91)
 }
-
 
 .countryField {
   display: inline;
   margin-left: 10px
 }
-
 
 .selection {
   width: 100px
@@ -45,11 +43,9 @@ label {
   margin-left: 7px
 }
 
-
 .ischeckField {
   width: 200px
 }
-
 
 .error {
   color: rgb(201, 77, 77)
