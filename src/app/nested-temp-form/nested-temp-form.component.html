@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class="container">
+      <div class="container1">
+
+        <div class="box">
+          <label for="uid">Id : </label><span class="ast">*</span>
+          <div>
+            <input type="number" name="uid" id="uid" class="inputs" [(ngModel)]="model.uid" required #uid="ngModel" />
+          </div>
+          <div *ngIf="uid.errors?.['required'] && uid.touched" class="error">
+            Id can't be empty
+          </div>
+        </div>
+
+        <div class="box">
+          <label for="name">Name : </label><span class="ast">*</span>
+          <div>
+            <input type="text" name="name" id="name" class="inputs" [(ngModel)]="model.name" required #name="ngModel"
+              autocomplete="name" />
+          </div>
+          <div *ngIf="name.errors?.['required'] && name.touched" class="error">
+            Name can't be empty
+          </div>
+        </div>
+
+        <div class="box">
+          <label for="age">Age : </label><span class="ast">*</span>
+          <div class="">
+            <input type="number" name="age" id="age" class="inputs" [(ngModel)]="model.age" min="18" max="70" required
+              #age="ngModel" />
+          </div>
+          <div *ngIf="age.errors?.['required'] && age.touched" class="error">
+            Age can't be empty
+          </div>
+          <div *ngIf="age.errors?.['min'] && age.touched" class="error">
+            Age should be greater than 18 or above
+          </div>
+          <div *ngIf="age.errors?.['max'] && age.touched" class="error">
+            Age should be less than 70 or below
+          </div>
+        </div>
+
+        <!--   <div class="box">
+          <label for="email">Email : </label>
+          <div>
+            <input type="email" name="email" id="email" class="inputs" [(ngModel)]="model.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #eml="ngModel" />
+          </div>
+          <div *ngIf="eml.errors?.['required']  && eml.touched" class="error">
+            Email can't be empty
+          </div>
+          <div *ngIf="eml.errors?.['pattern']" class="error">
+           Provide proper email
+          </div>
+        </div>
+
+          <div class="box">
+          <label for="mno">Telephone : </label>
+          <div>
+            <input type="tel" name="mno" id="mno" class="inputs" [(ngModel)]="model.mno" required #mobile="ngModel" pattern="^[0-9]{10}$" />
+          </div>
+          <div *ngIf="mobile.errors?.['required'] && mobile.touched" class="error">
+            Mobile no can't be empty
+          </div>
+          <div *ngIf="mobile.errors?.['pattern'] && mobile.touched" class="error">
+            Provide proper mobile no with 10 digits only
+          </div>
+        </div>
+
+          <div class="box">
+          <label for="gender">Gender : </label>
+          <div class="genderField" id="gender">
+            <input type="radio" name="gender" value="male" [(ngModel)]="model.gender" />Male
+            <input type="radio" name="gender" value="female" [(ngModel)]="model.gender" />Female
+          </div>
+        </div> -->
+
+        <div class="box">
+          <p class="address">Address : </p>
+          <div ngModelGroup="address" id="address" name="address">
+
+            <div class="box">
+              <label for="houseNo">House No : </label><span class="ast">*</span>
+              <div class="">
+                <input type="text" name="houseNo" id="houseNo" [(ngModel)]="model.address.houseNo" class="inputs"
+                  #houseNo="ngModel" required />
+              </div>
+              <div *ngIf="houseNo.errors?.['required'] && houseNo.touched" class="error">
+                House No 1 can't be empty
+              </div>
+            </div>
+
+            <div class="box">
+              <label for="addressLine1">Address 1 : </label><span class="ast">*</span>
+              <div class="">
+                <input type="text" name="addressLine1" id="addressLine1" [(ngModel)]="model.address.addressLine1"
+                  class="inputs" #address1="ngModel" required />
+              </div>
+              <div *ngIf="address1.errors?.['required'] && address1.touched" class="error">
+                Address 1 can't be empty
+              </div>
+            </div>
+
+            <div class="box">
+              <label for="addressLine2">Address 2 : </label>
+              <div class="">
+                <input type="text" name="addressLine2" id="addressLine2" class="inputs" ngModel />
+              </div>
+            </div>
+
+            <div class="box">
+              <label for="city">City : </label>
+              <div class="cityField">
+                <select name="city" id="city" class="selection" ngModel>
+                  <option value=""></option>
+                  <option value="surat">Surat</option>
+                  <option value="ahemdabad">Ahemdabad</option>
+                  <option value="rajkot">Rajkot</option>
+                  <option value="vadodara">Vadodara</option>
+                  <option value="jamnagar">Jamnagar</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="box">
+              <label for="state">State : </label>
+              <div class="stateField">
+                <select name="state" id="state" class="selection" ngModel>
+                  <option value=""></option>
+                  <option value="gujarat">Gujarat</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="box">
+              <label for="country">Country : </label>
+              <div class="countryField">
+                <select name="country" id="country" class="selection" ngModel autocomplete="country">
+                  <option value=""></option>
+                  <option value="india">India</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="ischeckField">
+          <div>
+            <input type="checkbox" name="isCheck" [(ngModel)]="model.isCheck" required #check="ngModel" /> I have read
+            the T & C
+          </div>
+          <div *ngIf="check.errors?.['required']" class="error">
+            Select the checkbox to submit the form
+          </div>
+        </div> -->
+
+        </div>
+
+        <div>
+          <button type="submit" [disabled]="f.invalid">Submit</button>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+
+</body>
+
+</html>
