@@ -9,7 +9,8 @@ import {FormsModule } from "@angular/forms";
 import { CustomDirectiveDirective } from './custom-directive.directive';
 import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 import { BuiltDirectiveComponent } from './built-directive/built-directive.component';
-import { ArrayMethodsComponent } from './array-methods/array-methods.component'
+import { ArrayMethodsComponent } from './array-methods/array-methods.component';
+import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { ArrayMethodsComponent } from './array-methods/array-methods.component'
     CustomDirectiveComponent,
     BuiltDirectiveComponent,
     ArrayMethodsComponent,
+    TempDrivenFormComponent,
   ],
   imports: [
     BrowserModule,
