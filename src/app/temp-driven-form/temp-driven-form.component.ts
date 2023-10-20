@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-temp-driven-form',
   templateUrl: './temp-driven-form.component.html',
@@ -15,7 +14,6 @@ export class TempDrivenFormComponent {
   // country!: string;
   // isCheck!: boolean;
 
-
   // fname="";
   // lname="";
   // email="";
@@ -24,18 +22,13 @@ export class TempDrivenFormComponent {
   // adderess="";
   // isCheck="";
 
-
   model = {
     fname: "",
     lname: "",
     email: "",
     mno: "",
     gender: "",
-    address: {
-      area: "",
-      pin: "",
-      country: ""
-    },
+    country: "",
     isCheck: ""
   }
 
