@@ -50,40 +50,6 @@
           </div>
         </div>
 
-        <!--   <div class="box">
-          <label for="email">Email : </label>
-          <div>
-            <input type="email" name="email" id="email" class="inputs" [(ngModel)]="model.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #eml="ngModel" />
-          </div>
-          <div *ngIf="eml.errors?.['required']  && eml.touched" class="error">
-            Email can't be empty
-          </div>
-          <div *ngIf="eml.errors?.['pattern']" class="error">
-           Provide proper email
-          </div>
-        </div>
-
-          <div class="box">
-          <label for="mno">Telephone : </label>
-          <div>
-            <input type="tel" name="mno" id="mno" class="inputs" [(ngModel)]="model.mno" required #mobile="ngModel" pattern="^[0-9]{10}$" />
-          </div>
-          <div *ngIf="mobile.errors?.['required'] && mobile.touched" class="error">
-            Mobile no can't be empty
-          </div>
-          <div *ngIf="mobile.errors?.['pattern'] && mobile.touched" class="error">
-            Provide proper mobile no with 10 digits only
-          </div>
-        </div>
-
-          <div class="box">
-          <label for="gender">Gender : </label>
-          <div class="genderField" id="gender">
-            <input type="radio" name="gender" value="male" [(ngModel)]="model.gender" />Male
-            <input type="radio" name="gender" value="female" [(ngModel)]="model.gender" />Female
-          </div>
-        </div> -->
-
         <div class="box">
           <p class="address">Address : </p>
           <div ngModelGroup="address" id="address" name="address">
@@ -152,17 +118,6 @@
             </div>
 
           </div>
-
-          <!-- <div class="ischeckField">
-          <div>
-            <input type="checkbox" name="isCheck" [(ngModel)]="model.isCheck" required #check="ngModel" /> I have read
-            the T & C
-          </div>
-          <div *ngIf="check.errors?.['required']" class="error">
-            Select the checkbox to submit the form
-          </div>
-        </div> -->
-
         </div>
 
         <div>
