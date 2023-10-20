@@ -6,14 +6,16 @@ import { CustomDirectiveComponent } from './custom-directive/custom-directive.co
 import { BuiltDirectiveComponent } from './built-directive/built-directive.component';
 import { ArrayMethodsComponent } from './array-methods/array-methods.component';
 import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component';
+import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.component';
 
 const routes: Routes = [
   { path: "builtinPipe", component: BuiltPipeComponent },
   { path: "customPipe", component: CustPipeComponent },
   { path: "customDirective", component: CustomDirectiveComponent },
-  { path: "builtDirective", component:BuiltDirectiveComponent },
-  { path: "arrayMethods", component:ArrayMethodsComponent },
-  { path: "templateDrivenForm", component:TempDrivenFormComponent }
+  { path: "builtDirective", component: BuiltDirectiveComponent },
+  { path: "arrayMethods", component: ArrayMethodsComponent },
+  { path: "templateDrivenForm", component: TempDrivenFormComponent },
+  { path: "nestedTemplateDrivenForm", component: NestedTempFormComponent }
 ];
 
 @NgModule({
