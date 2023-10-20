@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: "customDirective", component: CustomDirectiveComponent },
   { path: "builtDirective", component:BuiltDirectiveComponent },
   { path: "arrayMethods", component:ArrayMethodsComponent },
-  { path: "templateDrivenForm", component:TempDrivenFormComponent }
+  { path: "templateDrivenForm", component:TempDrivenFormComponent },
+  { path: "nestedTemplateDrivenForm", component:NestedTempFormComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
