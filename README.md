@@ -40,3 +40,6 @@
 
 ### Day 4 (20-10-2023)
   - Nested template driven form
+
+### Day 5 (25-10-2023)
+  - Passing data from child to parent and parent to child with @Input and @Output decorator.
