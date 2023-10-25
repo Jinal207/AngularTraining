@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NestedTempFormComponent {
 
-  model = {
+  model: any = {
     uid: "",
     name: "",
     age: "",
@@ -15,14 +15,16 @@ export class NestedTempFormComponent {
       houseNo: "",
       addressLine1: "",
       addressLine2: "",
-      city: "",
+      country: "",
       state: "",
-      country: ""
+      city: "",
     },
   }
 
   onSubmit(f: any): void {
+    if (f.invalid) {
+      return;
+    }
     console.log(f.value)
-    // f.resetForm()
   }
 }
