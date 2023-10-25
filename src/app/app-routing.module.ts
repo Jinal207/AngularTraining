@@ -7,6 +7,7 @@ import { BuiltDirectiveComponent } from './built-directive/built-directive.compo
 import { ArrayMethodsComponent } from './array-methods/array-methods.component';
 import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component';
 import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
 
 const routes: Routes = [
   { path: "builtinPipe", component: BuiltPipeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: "arrayMethods", component:ArrayMethodsComponent },
   { path: "templateDrivenForm", component:TempDrivenFormComponent },
   { path: "nestedTemplateDrivenForm", component:NestedTempFormComponent },
+  { path: "inputOutputModel", component:ParentComponentComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
