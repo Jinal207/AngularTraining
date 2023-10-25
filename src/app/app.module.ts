@@ -10,7 +10,8 @@ import { CustomDirectiveDirective } from './custom-directive.directive';
 import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 import { BuiltDirectiveComponent } from './built-directive/built-directive.component';
 import { ArrayMethodsComponent } from './array-methods/array-methods.component';
-import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component'
+import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component';
+import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.com
     BuiltDirectiveComponent,
     ArrayMethodsComponent,
     TempDrivenFormComponent,
+    NestedTempFormComponent,
   ],
   imports: [
     BrowserModule,
