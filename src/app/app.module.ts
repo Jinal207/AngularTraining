@@ -11,7 +11,9 @@ import { CustomDirectiveComponent } from './custom-directive/custom-directive.co
 import { BuiltDirectiveComponent } from './built-directive/built-directive.component';
 import { ArrayMethodsComponent } from './array-methods/array-methods.component';
 import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component';
-import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.component'
+import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { ChildComponentComponent } from './parent-component/child-component/child-component.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,8 @@ import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.com
     ArrayMethodsComponent,
     TempDrivenFormComponent,
     NestedTempFormComponent,
+    ParentComponentComponent,
+    ChildComponentComponent,
   ],
   imports: [
     BrowserModule,
