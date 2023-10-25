@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,Output} from '@angular/core';
 
 @Component({
   selector: 'app-parent-component',
@@ -14,5 +14,14 @@ export class ParentComponentComponent {
   counthandler(count: number) {
     this.count = count;
   }
+ randNumber!:number;
+
+  ngOnInit(){
+    this.randNumberFunc()
+  }
+
+randNumberFunc(){
+  this.randNumber= Math.floor(Math.random()*20)
+}
 
 }
