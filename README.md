@@ -43,3 +43,6 @@
 
 ### Day 5 (25-10-2023)
   - Passing data from child to parent and parent to child with @Input and @Output decorator.
+
+### Day 6 (26-10-2023)
+  - Passing data to components by BehaviourSubject.
