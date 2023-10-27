@@ -10,6 +10,7 @@ import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.com
 import { ParentComponentComponent } from './parent-component/parent-component.component';
 import { SendDataComponentComponent } from './send-data-component/send-data-component.component';
 import { ReceiveDataComponentComponent } from './receive-data-component/receive-data-component.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 const routes: Routes = [
   { path: "builtinPipe", component: BuiltPipeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: "inputOutputModel", component:ParentComponentComponent },
   { path: "sendDataComponent", component:SendDataComponentComponent },
   { path: "recieveDataComponent", component:ReceiveDataComponentComponent },
+  { path: "reactiveForm", component:ReactiveFormComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

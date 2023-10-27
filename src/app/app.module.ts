@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BuiltPipeComponent } from './built-pipe/built-pipe.component';
 import { CustPipeComponent } from './cust-pipe/cust-pipe.component';
 import { SearchPipePipe } from './search-pipe.pipe';
-import {FormsModule } from "@angular/forms";
+import {FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CustomDirectiveDirective } from './custom-directive.directive';
 import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 import { BuiltDirectiveComponent } from './built-directive/built-directive.component';
@@ -15,7 +15,8 @@ import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.com
 import { ParentComponentComponent } from './parent-component/parent-component.component';
 import { ChildComponentComponent } from './parent-component/child-component/child-component.component';
 import { SendDataComponentComponent } from './send-data-component/send-data-component.component';
-import { ReceiveDataComponentComponent } from './receive-data-component/receive-data-component.component'
+import { ReceiveDataComponentComponent } from './receive-data-component/receive-data-component.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +33,13 @@ import { ReceiveDataComponentComponent } from './receive-data-component/receive-
     ChildComponentComponent,
     SendDataComponentComponent,
     ReceiveDataComponentComponent,
+    ReactiveFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
