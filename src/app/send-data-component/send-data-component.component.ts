@@ -10,8 +10,12 @@ export class SendDataComponentComponent {
 
   constructor(public behaviourService: BehaviourServiceService) { }
 
-  onClickData() {
-    this.behaviourService.behaveData.next("This is the message from sendData component")
+  onClickData(): void {
+    this.behaviourService.behaveData.next("This is the message from behaviour subject")
+  }
+
+  onSubject(): void {
+    this.behaviourService.newData.next("This is the message from subject")
   }
 
 }

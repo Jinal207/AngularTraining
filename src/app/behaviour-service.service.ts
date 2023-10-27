@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,9 @@ import { BehaviorSubject } from 'rxjs';
 
 export class BehaviourServiceService {
 
-  public behaveData = new BehaviorSubject<string>("Default Value")
+  public behaveData = new BehaviorSubject<string>("Default Value");
+  public newData = new Subject<string>();
+
   constructor() { }
 
 }
