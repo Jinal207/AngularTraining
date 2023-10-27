@@ -13,7 +13,9 @@ import { ArrayMethodsComponent } from './array-methods/array-methods.component';
 import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component';
 import { NestedTempFormComponent } from './nested-temp-form/nested-temp-form.component';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
-import { ChildComponentComponent } from './parent-component/child-component/child-component.component'
+import { ChildComponentComponent } from './parent-component/child-component/child-component.component';
+import { SendDataComponentComponent } from './send-data-component/send-data-component.component';
+import { ReceiveDataComponentComponent } from './receive-data-component/receive-data-component.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,8 @@ import { ChildComponentComponent } from './parent-component/child-component/chil
     NestedTempFormComponent,
     ParentComponentComponent,
     ChildComponentComponent,
+    SendDataComponentComponent,
+    ReceiveDataComponentComponent,
   ],
   imports: [
     BrowserModule,
