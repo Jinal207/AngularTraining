@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div class="container1">
+
+        <div class="box">
+          <label for="id">Id : </label><span class="ast">*</span>
+          <div>
+            <input type="number" name="id" id="id" class="inputs" formControlName="id" />
+          </div>
+          <div *ngIf="isSubmited && userForm.controls.id.errors" class="error">
+            <div  *ngIf="userForm.controls.id.errors?.['required']">
+              Id is required!
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <label for="name">Name : </label><span class="ast">*</span>
+          <div>
+            <input type="text" name="name" id="name" class="inputs" formControlName="name" />
+          </div>
+          <div *ngIf="isSubmited && userForm.controls.name.errors" class="error">
+            <div  *ngIf="userForm.controls.name.errors?.['required']">
+              Name is required!
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <label for="age">Age : </label><span class="ast">*</span>
+          <div>
+            <input type="number" name="age" id="age" class="inputs" formControlName="age" />
+          </div>
+          <div *ngIf="isSubmited && userForm.controls.age.errors" class="error">
+            <div  *ngIf="userForm.controls.age.errors?.['required']">
+              age is required!
+            </div>
+            <div  *ngIf="userForm.controls.age.errors?.['min']">
+              age should be 18 or above!
+            </div>
+            <div  *ngIf="userForm.controls.age.errors?.['max']">
+              age should be 75 or below!
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <label for="email">Email : </label><span class="ast">*</span>
+          <div>
+            <input type="text" name="email" id="email" class="inputs" formControlName="email" />
+          </div>
+          <div *ngIf="isSubmited && userForm.controls.email.errors" class="error">
+            <div  *ngIf="userForm.controls.email.errors?.['required']">
+              Email is required!
+            </div>
+          </div>
+          <div *ngIf="isSubmited && userForm.controls.email.errors" class="error">
+            <div  *ngIf="userForm.controls.email.errors?.['pattern']">
+              Email is not proper!
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
