@@ -37,3 +37,13 @@ label {
 .ast {
   color: rgb(201, 77, 77)
 }
+
+.address{
+  margin-top:10px;
+}
+
+
+.selectFields
+{
+  width: 260px
+}
